@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Animations!
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <button [@flip]="flipState" ion-button color="light" (click)="toggleFlip()">Flip!</button>
+
+  <button [@flyInOut]="flyInOutState" ion-button color="light" (click)="toggleFlyInOut()">Fly Out!</button>
+
+  <button [@fade]="fadeState" ion-button color="light" (click)="toggleFade()">Fade!</button>
+
+  <button [@bounce]="bounceState" ion-button color="light" (click)="toggleBounce()">Bounce!</button>
+
+</ion-content>
